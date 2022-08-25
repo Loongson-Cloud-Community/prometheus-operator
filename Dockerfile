@@ -1,6 +1,4 @@
-ARG ARCH="amd64"
-ARG OS="linux"
-FROM quay.io/prometheus/busybox-${OS}-${ARCH}:latest
+FROM cr.loongnix.cn/library/busybox:1.30.1
 
 ADD operator /bin/operator
 
